@@ -6,28 +6,203 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <title>Portfolio of Claire Ingram</title>
 </head>
 
 <body>
 
     <!-- nav bar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <!-- "navbar-expand-md" turns into burger menu on smaller screens
+            "navbar-light" gives it a theme -->
+        <div class="container-xxl">
+            <a href="#intro" class="navbar-brand">
+                <span class="fw-bold text-secondary">
+                    <i class="bi bi-code-square"></i>
+                    Claire Ingram
+                </span>
+            </a>
+
+            <!-- burger menu for mobile ('aria' is for screen readers)-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- nav bar links -->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
 
     <!-- hero -->
+    <section id="intro">
+        <div class="containter-lg">
+            <div class="row justify-content-center align-items-center">
+                <!-- align-items-center puts items verically in center of container -->
+                <div class="col-md-5 text-center text-md-start">
+                    <!-- text smaller screens center, larger goes left -->
+                    <h1>
+                        <div class="display-2">Title</div>
+                        <div class="display-5 text-muted">Subtitle</div>
+                    </h1>
+                    <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#pricing" class="btn btn-secondary btn-lg">button text</a>
+                </div>
+
+                <div class="col-md-5 text-center d-none d-md-block">
+                    <!-- d-none d-md-block removes image on smaller screens and displays as block when on medium+ screens -->
+                    <img class="img-fluid" src="https://placehold.co/400" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- work -->
+    <section id="work" class="bg-light mt-5">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Work</h2>
+                <p class="lead text-muted">A selection of finished projects</p>
+            </div>
+
+            <!-- cards -->
+            <div class="row my-5 align-items-center justify-content-center g-4">
+                <!-- g-0 is no gap between cards, g-5 is a big gap -->
+
+                <!-- card one -->
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-0">
+                        <img src="https://placehold.co/100" class="card-img-top" alt="...">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">Work one</h4>
+                            <p class="card-text mx-5 text-muted">Lorem ipsum dolor.</p>                           
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card two -->
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-0">
+                        <img src="https://placehold.co/100" class="card-img-top" alt="...">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">Work two</h4>
+                            <p class="card-text mx-5 text-muted">Lorem ipsum dolor.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card three -->
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-0">
+                        <img src="https://placehold.co/100" class="card-img-top" alt="...">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">Work three</h4>
+                            <p class="card-text mx-5 text-muted">Lorem ipsum dolor.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
 
     <!-- skills -->
+    <section id="skills">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Skills</h2>
+                <p class="lead text-muted">Current skill set</p>
+            </div>
 
-    <!-- about/contact -->
+            <!-- cards -->
+            <div class="row my-5 align-items-center justify-content-center g-5">
+                <!-- g-0 is no gap between cards, g-5 is a big gap -->
+
+                <!-- card one -->
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-0 bg-light">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">Photoshop</h4>
+                            <p class="lead card-subtitle">Intermediate</p>                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card two -->
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-0 bg-light">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">HTML & CSS</h4>
+                            <p class="lead card-subtitle">Beginner</p>                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card three -->
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-0 bg-light">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">Piano</h4>
+                            <p class="lead card-subtitle">Beginner</p>                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="bg-light">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>About Me</h2>
+                <p class="lead text-muted mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus rem aliquid reiciendis, voluptatum modi voluptatem expedita quisquam temporibus incidunt at debitis dicta? Commodi, unde cumque. Commodi, eaque ab! Nisi ullam, asperiores quidem magnam eligendi quo blanditiis officia inventore commodi ratione et nam at animi iste sint excepturi natus dolor maxime.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact
+    <section id="contact">
+        <div class="container-lg">
+
+        </div>
+    </section> -->
 
     <!-- footer -->
-    
+    <footer>
+        <div class="d-grid gap-5 d-md-flex justify-content-center p-3">
+            <button type="button" class="btn btn-outline-primary">Twitter</button>
+            <button type="button" class="btn btn-outline-primary">Instagram</button>
+            <button type="button" class="btn btn-outline-primary">GitHub</button>
+        </div>
+    </footer>
+
     <!-- bootstrap javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
 </body>
