@@ -1,3 +1,18 @@
 section {
     padding: 60px;
 }
+
+/* colour scheme */
+
+:root {
+    --light-peach: #f6f4f0;
+    --peach: #eae6e0;
+    --blue: #b7d1e6;
+    --orange: #ff8059;
+    --teal: #39b0ca;
+    --yellow: #fdcf44;
+}
+
+.bg-color-peach {
+    background-color: var(--light-peach);
+}
