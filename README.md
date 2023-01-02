@@ -17,12 +17,12 @@ Requirements were as follows:
 
 ## Final project links
 
-* Deployed portfolio: 
+* Deployed portfolio: https://ing3rs.github.io/challenge-3-boostrap-portfolio
 * GitHub repository: https://github.com/Ing3rs/challenge-3-boostrap-portfolio
 
 ## Final project preview
 
-![portfolio demo](https://github.com/Ing3rs/challenge-3-boostrap-portfolio/)
+![portfolio demo](https://github.com/Ing3rs/challenge-3-boostrap-portfolio/blob/main/assets/images/claire-ingram-portfolio-screenshot.png)
 
 ## Copyright
 
