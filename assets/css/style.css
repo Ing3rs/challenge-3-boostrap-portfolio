@@ -16,3 +16,58 @@ section {
 .bg-color-peach {
     background-color: var(--light-peach);
 }
+
+/* nav link hover */
+
+.nav-item a {
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-item a:before {
+    content: '';
+    background: var(--orange);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-item a:hover {
+    background-position: 0;
+}
+
+a:hover::before {
+    width: 100%;
+}
+
+/* button box shadow on hover */
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+}
+
+.btn:hover {
+    box-shadow: 
+    0.3em 0.3em 0 0 var(--yellow);
+}
+
+/* card shadow on hover */
+
+.card-shadow {
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+}
+
+.card-shadow:hover {
+    box-shadow: 
+    0.5em 0.5em 0 0 var(--peach);
+}
